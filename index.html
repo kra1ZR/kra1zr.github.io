@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Product catalog and order form">
+  <title>Storefront</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Storefront</a>
+      <button id="cartButton" class="cart-button" type="button" aria-label="Open cart">
+        Cart <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Catalog</p>
+      <h1>Products</h1>
+      <p>Select the products and quantities you want, then review your order and choose a payment method.</p>
+    </section>
+
+    <section id="productGrid" class="product-grid" aria-label="Products"></section>
+
+    <section id="cartSection" class="cart-section" aria-labelledby="cartTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Your selection</p>
+          <h2 id="cartTitle">Order</h2>
+        </div>
+        <button id="clearCart" class="text-button" type="button">Clear</button>
+      </div>
+
+      <div id="cartItems" class="cart-items">
+        <p class="empty-state">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+
+      <form id="orderForm" class="order-form">
+        <div class="form-grid">
+          <label>
+            Name
+            <input id="customerName" name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input id="customerEmail" name="email" type="email" autocomplete="email" required>
+          </label>
+        </div>
+
+        <label>
+          Payment method
+          <select id="paymentMethod" name="payment" required>
+            <option value="" selected disabled>Select a payment method</option>
+            <option value="Payment method 1">Payment method 1</option>
+            <option value="Payment method 2">Payment method 2</option>
+            <option value="Payment method 3">Payment method 3</option>
+          </select>
+        </label>
+
+        <label>
+          Message <span class="optional">(optional)</span>
+          <textarea id="customerMessage" name="message" rows="4" placeholder="Anything you want us to know?"></textarea>
+        </label>
+
+        <button class="primary-button" type="submit">Generate Order Email</button>
+        <p id="formStatus" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Storefront</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
