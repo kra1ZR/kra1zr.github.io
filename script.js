@@ -5,30 +5,70 @@
 const PRODUCTS = [
   {
     id: "product-1",
-    name: "Product 1",
+    name: "ALCarnitor [750mg/mL]",
+    description: "Add your product description here.",
+    price: 36,
+    image: ""
+  },
+  {
+    id: "product-2",
+    name: "Diisopropylamine Dichloroacetate [300mg/mL]",
+    description: "Add your product description here.",
+    price: 42,
+    image: ""
+  },
+  {
+    id: "product-3",
+    name: "Super Shredder [455mg/mL]",
     description: "Add your product description here.",
     price: 25,
     image: ""
   },
   {
-    id: "product-2",
-    name: "Product 2",
-    description: "Add your product description here.",
-    price: 40,
-    image: ""
-  },
-  {
-    id: "product-3",
-    name: "Product 3",
-    description: "Add your product description here.",
-    price: 60,
-    image: ""
-  },
-  {
     id: "product-4",
-    name: "Product 4",
+    name: "Temporary Insanity [295mg/mL]",
     description: "Add your product description here.",
-    price: 80,
+    price: 27,
+    image: ""
+  }
+  },
+  {
+    id: "product-5",
+    name: "NAD+ [150mg/mL]",
+    description: "Add your product description here.",
+    price: 33,
+    image: ""
+  }
+  },
+  {
+    id: "product-6",
+    name: "Glutathione [300mg/mL]",
+    description: "Add your product description here.",
+    price: 36,
+    image: ""
+  }
+  },
+  {
+    id: "product-7",
+    name: "Bacteriostatic Water [0.9%]",
+    description: "Add your product description here.",
+    price: 12,
+    image: ""
+  }
+  },
+  {
+    id: "product-8",
+    name: "Methylcobalamin [10mg/mL]",
+    description: "Add your product description here.",
+    price: 35,
+    image: ""
+  }
+  },
+  {
+    id: "product-9",
+    name: "Yohimbine V2 [7mg/mL]",
+    description: "Add your product description here.",
+    price: 35,
     image: ""
   }
 ];
