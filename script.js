@@ -30,23 +30,20 @@ const PRODUCTS = [
     description: "Add your product description here.",
     price: 27,
     image: ""
-  }
   },
   {
     id: "product-5",
     name: "NAD+ [150mg/mL]",
     description: "Add your product description here.",
     price: 33,
-    image: ""
-  }
+    image: ""\
   },
   {
     id: "product-6",
     name: "Glutathione [300mg/mL]",
     description: "Add your product description here.",
     price: 36,
-    image: ""
-  }
+    image: ""\
   },
   {
     id: "product-7",
@@ -54,7 +51,6 @@ const PRODUCTS = [
     description: "Add your product description here.",
     price: 12,
     image: ""
-  }
   },
   {
     id: "product-8",
@@ -62,7 +58,6 @@ const PRODUCTS = [
     description: "Add your product description here.",
     price: 35,
     image: ""
-  }
   },
   {
     id: "product-9",
